@@ -1,0 +1,13 @@
+.earth .planet {
+    background-color: #0000ff;
+    width: var(--earth-size);
+    height: var(--earth-size);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.earth.orbit {
+    width: calc(var(--au) * 2);
+    height: calc(var(--au) * 2);
+}

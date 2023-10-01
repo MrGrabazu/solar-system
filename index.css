@@ -1,0 +1,49 @@
+:root {
+    --au: 149.597870700px;
+    --system-size: calc(100 * var(--au)); 
+    --sun-size: 139.2684px;
+    --earth-size: 12.7562px;
+}
+
+.space {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #000000;
+
+}
+
+.system {
+    position: relative;
+    display: flex;
+    width: var(--system-size);
+    height: var(--system-size);
+    justify-content: center;
+    align-items: center;
+    margin-top: calc(((var(--system-size) / 2) - 50vh) * -1);
+    margin-left: calc(((var(--system-size) / 2) - 50vw) * -1);
+}
+
+.sun {
+    width: var(--sun-size);
+    height: var(--sun-size);
+    background-color: #ffffff;
+    box-shadow: 0px 0px 50px 5px #ffffff;
+    border-radius: 100%;
+    position: absolute;
+    top: (var(--system-size) / 2);
+    left: (var(--system-size) / 2);
+}
+
+.orbit {
+    background-color: transparent;
+    border: 1px solid #333333;
+    border-radius: 100%;
+    position: relative;
+}
+
+.planet {
+    border-radius: 100%;
+}
